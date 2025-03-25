@@ -42,7 +42,7 @@ def send_discord_alert(username):
 class PSNCheckerApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("PSN Username Checker")
+        self.root.title("PSN Username Checker 1.0.1")
         self.root.geometry("1080x650")
 
         # Charger l'image de fond
@@ -104,7 +104,7 @@ class PSNCheckerApp:
         self.log_button.pack(pady=5)
 
         # Crédits en haut à droite
-        self.credit_label = ctk.CTkLabel(root, text="credit @a5x twitter @rchh", font=("Arial", 12), text_color="lightgrey")
+        self.credit_label = ctk.CTkLabel(root, text="credit : Github @a5x", font=("Arial", 12), text_color="lightgrey")
         self.credit_label.place(x=900, y=10)  # Positionner le texte en haut à droite
 
     def select_file(self):
